@@ -119,8 +119,8 @@ a:hover {
   padding-top: 20px;
 }
 
-.about-coverer {
-  background: url("../img/bg.jpg") no-repeat center center fixed;
+.about-container {
+  background: url("/img/bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -525,11 +525,11 @@ i {
   .noughts-and-crosses,
   .news {
     margin: 2% auto 8% auto;
-    height: 160px;
-    width: 280px;
+    height: 130px;
+    width: 270px;
   }
 
-  .about-coverer {
+  .about-container {
     margin-top: 30px;
   }
 
