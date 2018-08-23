@@ -1,0 +1,324 @@
+<head>
+	<title>Rosie Zhekova | Junior Web Developer</title>
+	<link rel="icon" type="image/x-icon" href="tabicon.png" />
+	<meta name="description" content="Rosie Zhekova is a Web Developer in training, specialising in HTML, CSS, JavaScript, with experience in Ruby.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,600,600i|Pacifico" rel="stylesheet">
+	<script type="text/javascript" src="prism.js"></script>
+	<script type="text/javascript" src="prism.ruby.js"></script>
+	<link rel="stylesheet" href="prism-atom-dark.css" type="text/css" media="screen" />
+</head>
+
+<body style="margin:0%">
+	<div>
+
+		<!-- nav bar that display on bigger screens -->
+		<nav>
+			<div id="laptop-nav">
+
+				<ul id="nav-bar">
+					<li>
+						<a href="#about-me" class="nav-link">ABOUT ME</a>
+					</li>
+					<li>
+						<a href="#code-samples" class="nav-link">CODE SAMPLES</a>
+					</li>
+					<li>
+						<a href="#web-apps" class="nav-link">WEB APPS</a>
+					</li>
+					<li>
+						<a href="#skills-and-tools" class="nav-link">SKILLS &amp; TOOLS</a>
+					</li>
+					<li class="hire-me">
+						<a href="#hire-me" class="nav-link">HIRE ME</a>
+					</li>
+				</ul>
+			</div>
+			<label for="show-menu" class="show-menu">
+				<i class="fas fa-bars"></i>
+			</label>
+			<input type="checkbox" id="show-menu" role="button" />
+
+			<!-- nav bar that displays on smaller screens -->
+			<div id="mobile-nav">
+				<ul id="nav-bar">
+					<li>
+						<a href="#about-me" class="nav-link">ABOUT ME</a>
+					</li>
+					<li>
+						<a href="#code-samples" class="nav-link">CODE SAMPLES
+					</li>
+					<li>
+						<a href="#web-apps" class="nav-link">
+							WEB APPS</a>
+					</li>
+					<li>
+						<a href="#skills-and-tools" class="nav-link">SKILLS &amp; TOOLS</a>
+					</li>
+					<li style="margin-bottom: 12px; text-align: center" class="hire-me">
+						<a href="#hire-me" class="nav-link">HIRE ME</a>
+					</li>
+				</ul>
+
+			</div>
+		</nav>
+
+		<div class="about-container">
+
+			<div id="about-me" class="about">
+				<img src="me.jpg" class="me" />
+
+				<h1>Rosie Zhekova</h1>
+				<h2>JUNIOR WEB DEVELOPER</h2>
+				<hr class="grey" />
+				<p class="bio">
+					Rosie Zhekova is a Quality Control Manager at a market research company who is in her early stages of becoming a web developer.
+					Current coding experience includes basic training in HTML, CSS, JavaScript and Ruby through freeCodeCamp, The Firehose
+					Project and Codecademy. She has always been passionate about technology as well as art and film photography, and is
+					excited for her technological and creative sides to join forces in creating some amazing websites.
+				</p>
+			</div>
+
+		</div>
+		<hr id="code-samples" />
+		<h3 class="code-samples">Ruby Code Samples</h3>
+		<hr class="yellow">
+
+
+		<section class="grid">
+			<div class="box box-1">
+				<h4>Temperature Conversion</h4>
+				<p class="text-box">
+					This Ruby program will prompt the user for a temperature in degrees Celsius and let the user know what the corresponding
+					temperature is in Fahrenheit.
+				</p>
+			</div>
+
+			<div class="box box-2">
+				<pre><code class="language-ruby">puts &quot;Enter degrees in Celsius:&quot;
+celsius = gets.to_f
+	
+	def celsius_to_fahrenheit(celsius)
+	  	return celsius * 1.8 + 32 
+	end
+	
+puts &quot;The temperature is #{celsius_to_fahrenheit(celsius)}F.&quot;</code></pre>
+			</div>
+
+			<br class="clear">
+
+			<div class="box box-3">
+				<pre><code class="language-ruby">puts &quot;Enter a number&quot;
+n = gets.chomp.to_i
+	
+	def calculate_the_ordinal(n)
+	  	right_most_digit = n % 10  
+	  	if n == 11 || n == 12 || n == 13
+	    	return &quot;th&quot;
+	  	elsif right_most_digit == 1
+	   	 	return &quot;st&quot;
+	  	elsif right_most_digit == 2
+	    	return &quot;nd&quot;
+	  	elsif right_most_digit == 3
+	    	return &quot;rd&quot;
+	  	else
+	    	return &quot;th&quot;
+	 	end
+	end
+	
+puts &quot;That's the #{n}&quot; + calculate_the_ordinal(n) + &quot; item!&quot;</code></pre>
+			</div>
+
+			<div class="box box-4">
+				<h4>Ordinal Challenge</h4>
+				<p class="text-box">
+					This Ruby program will convert a plain number to the ordinal of the number. So for example, if the user enters 2, it will
+					display 2nd, if the user enters 3, it will display 3rd, etc.
+				</p>
+			</div>
+
+			<br class="clear">
+
+			<div class="box box-5">
+				<h4>Foobar Challenge</h4>
+				<p class="text-box">
+					This Ruby program is an adaptation of a classic technical interview problem which displays sequences of the Foobar pattern.
+				</p>
+			</div>
+
+			<div class="box box-6">
+				<pre><code class="language-ruby">puts &quot;How many items do you want to see?&quot;
+number_of_items = gets.chomp.to_i
+	
+	def foobar(number_input)
+	   n = 1
+	
+	   while n != number_input + 1
+	     if n % 15 == 0
+	     puts &quot;Foobar&quot;
+	    elsif n % 5 == 0
+	     puts &quot;Bar&quot;
+	    elsif n % 3 == 0
+	     puts &quot;Foo&quot;
+	    else
+	     puts n
+	    end
+	    
+	     n = n + 1
+	  end
+	end
+	
+foobar(number_of_items)
+	</code></pre>
+			</div>
+
+			<br class="clear">
+
+		</section>
+
+
+		<hr id="web-apps" />
+		<h3 class="web-apps">JavaScript Web Apps</h3>
+		<hr class="yellow">
+
+		<div class="flex laptop-webapps">
+			<div class="thumbnail">
+				Random Quote Generator
+				<a href="https://codepen.io/rzhekova/pen/JpMyRe" target="_blank">
+					<div class="quote-gen">
+						<p>
+							Minimalist design; created using jQuery, Bootstrap 4, Forismatic API and a little bit of Sass (the CSS kind mainly)
+						</p>
+					</div>
+				</a>
+			</div>
+			<div class="thumbnail">
+				Noughts + Crosses
+				<a href="http://noughts-crosses-rz.herokuapp.com/" target="_blank">
+					<div class="noughts-crosses">
+						<p>
+							Simple noughts and crosses game created using React.js and CSS, including CSS Grid. Hosted on Heroku
+						</p>
+					</div>
+				</a>
+			</div>
+			<div class="thumbnail">
+				News App
+				<a href="#" target="_blank">
+					<div class="nc-news"></div>
+				</a>
+			</div>
+			<!-- <div class="thumbnail">
+				project 4
+				<a href="#" target="_blank">
+					<div class=" ">
+						<p>
+							skdhfkdhf
+						</p>
+					</div>
+				</a>
+			</div> -->
+		</div>
+
+		<div class="flex mobile-webapps">
+			<div class="thumbnail">
+				Random Quote Generator
+				<a href="https://codepen.io/rzhekova/pen/JpMyRe" target="_blank">
+					<div class="quote-generator"></div>
+				</a>
+				<p class="project-description">
+					Minimalist design; created using jQuery, Bootstrap 4, Forismatic API and a little bit of Sass (the CSS kind mainly)
+				</p>
+			</div>
+			<div class="thumbnail">
+				Noughts + Crosses
+				<a href="http://noughts-crosses-rz.herokuapp.com/" target="_blank">
+					<div class="noughts-and-crosses ">
+					</div>
+				</a>
+				<p class="project-description">
+					Simple noughts and crosses game created using React.js and CSS, including CSS Grid. Hosted on Heroku
+				</p>
+			</div>
+			<div style="margin-bottom: 0vh" class="thumbnail">
+				News App
+				<a href="# " target="_blank">
+					<div class="news"></div>
+				</a>
+				<p class="project-description">
+					A reddit-style news aggregation webite where users can submit and discuss content. Developed with ReactJS, axios, HTML, CSS.
+					Hosted on Netlify
+				</p>
+			</div>
+			<!-- <div style="margin-top: 14vh" class="thumbnail">
+							project 4
+							<a href="# " target="_blank">
+								<div class=" ">
+								</div>
+							</a>
+											<p class="project-description">
+												skdhfkdhf
+											</p>
+						</div> -->
+		</div>
+
+		<hr id="skills-and-tools" />
+		<h3 class="skills">Skills &amp; Tools</h3>
+		<hr class="yellow" />
+		<p class="skills-and-tools">
+			Rosie has developed proficiency and expertise in the following programming languages and comfort with the following tools.
+		</p>
+
+		<div class="icons">
+			<i class="devicon-nodejs-plain"></i>
+			<i class="devicon-react-original-wordmark"></i>
+			<i class="devicon-express-original-wordmark"></i>
+			<i class="devicon-mocha-plain"></i>
+			<i class="devicon-mongodb-plain-wordmark"></i>
+			<i class="devicon-postgresql-plain-wordmark"></i>
+			<i class="devicon-git-plain-wordmark"></i>
+			<i class="devicon-github-plain-wordmark"></i>
+			<i class="devicon-css3-plain"></i>
+			<i class="devicon-html5-plain"></i>
+			<i class="devicon-ruby-plain-wordmark"></i>
+		</div>
+		<hr id="hire-me">
+		<div class="contact-me">
+			<h3 class="contact-headline">Contact</h3>
+			<hr class="yellow" />
+			<p class="contact-info">
+				Currently entertaining new opportunities. Please get in touch via:
+			</p>
+			<a href="mailto:rzhekova@gmail.com">
+				<button>Email
+					<i class="fas fa-envelope"></i>
+				</button>
+			</a>
+			<!-- <a href="https://www.facebook.com/rosiezhekova" target="_blank">
+				<button>Facebook
+					<i class="fab fa-facebook"></i>
+				</button>
+			</a> -->
+			<a href="https://github.com/rzhekova" target="_blank">
+				<button>GitHub
+					<i class="fab fa-github"></i>
+				</button>
+			</a>
+			<a href="https://www.instagram.com/rzhekova/" target="_blank">
+				<button>Instagram
+					<i class="fab fa-instagram"></i>
+				</button>
+			</a>
+			<a href="https://www.freecodecamp.org/rzhekova" target="_blank">
+				<button>freeCodeCamp
+					<i class="fab fa-free-code-camp"></i>
+				</button>
+			</a>
+		</div>
+		<h5 style="text-align: center">Written and coded by Rosie Zhekova</h5>
+	</div>
+
+</body>
