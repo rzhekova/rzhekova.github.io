@@ -119,8 +119,8 @@ a:hover {
   padding-top: 20px;
 }
 
-.about-container {
-  background: url("bg.jpg") no-repeat center center fixed;
+.about-coverer {
+  background: url("../img/bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -225,7 +225,7 @@ div.icons > i {
   text-align: center;
   margin: 2% auto;
   width: 350px;
-  height: 200px;
+  height: 170px;
 }
 
 div.flex.mobile-webapps {
@@ -269,33 +269,33 @@ i {
 }
 
 .quote-gen {
-  background: url("./projects-pics/quote-gen.png");
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  background: url("../projects-pics/quote-gen.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   border: 1px solid lightgray;
   border-radius: 2%;
   color: transparent;
 }
 
 .noughts-crosses {
-  background: url("./projects-pics/noughts-crosses.png");
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  background: url("../projects-pics/noughts-crosses.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   border: 1px solid lightgray;
   border-radius: 2%;
   color: transparent;
 }
 
 .nc-news {
-  background: url("");
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  background: url("../img/nc-news.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   border: 1px solid lightgray;
   border-radius: 2%;
   color: transparent;
@@ -312,7 +312,8 @@ i {
 }
 
 .quote-gen:hover p,
-.noughts-crosses:hover p {
+.noughts-crosses:hover p,
+.nc-news:hover p {
   font-weight: lighter;
   margin: 15% auto;
   text-align: center;
@@ -339,33 +340,33 @@ i {
   }
 
   .quote-generator {
-    background: url("./projects-pics/quote-gen.png");
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+    background: url("../projects-pics/quote-gen.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     border: 1px solid lightgray;
     border-radius: 2%;
     color: transparent;
   }
 
   .noughts-and-crosses {
-    background: url("./projects-pics/noughts-crosses.png");
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+    background: url("../projects-pics/noughts-crosses.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     border: 1px solid lightgray;
     border-radius: 2%;
     color: transparent;
   }
 
   .news {
-    background: url("");
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+    background: url("../img/nc-news.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     border: 1px solid lightgray;
     border-radius: 2%;
     color: transparent;
@@ -388,6 +389,9 @@ i {
   .icons {
     margin-top: 80px;
     margin-bottom: 80px;
+  }
+  div.icons > i {
+    font-size: 4rem;
   }
 
   /* nav bar */
@@ -525,7 +529,7 @@ i {
     width: 280px;
   }
 
-  .about-container {
+  .about-coverer {
     margin-top: 30px;
   }
 
