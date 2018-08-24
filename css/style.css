@@ -280,7 +280,7 @@ i {
 }
 
 .noughts-crosses {
-  background: url("../projects-pics/noughts-crosses.png");
+  background: url("../projects-pics/noughtscrosses.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -291,7 +291,7 @@ i {
 }
 
 .nc-news {
-  background: url("../img/nc-news.png");
+  background: url("../projects-pics/nc-news.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -351,7 +351,7 @@ i {
   }
 
   .noughts-and-crosses {
-    background: url("../projects-pics/noughts-crosses.png");
+    background: url("../projects-pics/noughtscrosses.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -362,7 +362,7 @@ i {
   }
 
   .news {
-    background: url("../img/nc-news.png");
+    background: url("../projects-pics/nc-news.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
