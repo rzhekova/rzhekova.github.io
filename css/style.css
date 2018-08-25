@@ -428,6 +428,7 @@ i {
   .show-menu {
     background-color: #202020;
     display: inline-block;
+    width: 10vw;
   }
 
   nav {
