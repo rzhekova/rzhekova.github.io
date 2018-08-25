@@ -120,7 +120,7 @@ a:hover {
 }
 
 .about-container {
-  background: url("/img/bg.jpg") no-repeat center center fixed;
+  background: url("/img/bg.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -435,7 +435,7 @@ i {
   }
 
   input[type="checkbox"]:checked ~ #mobile-nav {
-    background: #202020;
+    background-color: #202020;
     display: flex;
     flex-direction: column;
     width: 160px;
