@@ -63,12 +63,6 @@ nav {
   margin: 0 auto;
 }
 
-.yellow-background {
-  background-color: #f5a623;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-}
-
 .hire-me {
   border-style: solid;
   border-color: white;
@@ -81,6 +75,16 @@ a {
 
 a:hover {
   color: white;
+}
+
+li > a:hover {
+  color: white;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+li > a:hover {
+  color: #f5a623;
 }
 
 .bio {
@@ -246,10 +250,6 @@ button {
 .contact-me button:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-
-button:active {
-  color: #f5a623;
 }
 
 i {
